@@ -1,0 +1,61 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Calkitus</title>
+</head>
+<body>
+    
+    <div class="container">        
+            <div class="container__front"> 
+                <div class="container__square"> 
+                    <div class="container__display">   
+                        <input type="text" id="pincode" minlength="6" maxlength="6" autofocus/> 
+                        <img src="assets/eye.ico" class="visible">
+                    </div>
+                    <input type="button" id="7" value="7" class="container__front__button number" />
+                    <input type="button" id="8" value="8" class="container__front__button number" />
+                    <input type="button" id="9" value="9" class="container__front__button number" />
+                    <input type="button" id="divide" value="/" class="container__front__button operator" />
+                    <input type="button" id="4" value="4" class="container__front__button number" />
+                    <input type="button" id="5" value="5" class="container__front__button number" />
+                    <input type="button" id="6" value="6" class="container__front__button number" />
+                    <input type="button" id="multiply" value="x" class="container__front__button operator" />
+                    <input type="button" id="1" value="1" class="container__front__button number" />
+                    <input type="button" id="2" value="2" class="container__front__button number" />
+                    <input type="button" id="3" value="3" class="container__front__button number" />
+                    <input type="button" id="rest" value="-" class="container__front__button operator" />
+                    <input type="button" id="btn-clean" value="C" class="container__front__button"/>            
+                    <input type="button" id="0" value="0" class="container__front__button number" />
+                    <input type="submit" id="btn-verify" value="Save" class="container__front__button" />
+                    <input type="button" id="sum" value="+" class="container__front__button operator" />
+                </div>
+                
+            </div>
+        
+    </div>
+
+    <div class="modalcontainer" id="welcome">
+        <div class="modalcontainer__modal">
+            <p class="close" id="cross1">x</p>
+            <h1>Welcome to Calkitus</h1>
+            <p>You can use the calculator or generate strong passwords.<br>Created by <a href="https://especiedigital.com">especiedigital.com</a></p>
+        </div>
+    </div>
+
+    <div class="modalcontainer modal--close" id="introduce">
+        <div class="modalcontainer__pass">
+            <p class="close" id="cross2">x</p>
+            <h1>Introduce tu código</h1>
+            <p>Introduce el número de 6 digitos para continuar<br>(tienes 3 intentos).</p>
+        </div>
+    </div>
+
+    <div class="modalcontainer--error modal--close" id="yellow">
+            <p id="message"></p>
+    </div>
+    <script src="javascript.js"></script>
+</body>
+</html>
